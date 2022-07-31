@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:groupchatapp/helper/helper_functions.helper.dart';
 import 'package:groupchatapp/shared/constants.shared.dart';
 import 'package:groupchatapp/view/home.view.dart';
-import 'package:groupchatapp/view/login_view.view.dart';
+import 'package:groupchatapp/view/auth/login_view.view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Chat App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: const Color(0xffee7b64),
       ),
       home: _isSignedIn ? const HomeView() : const LoginView(),
     );
