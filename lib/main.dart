@@ -61,7 +61,8 @@ class _MyAppState extends State<MyApp> {
       title: 'Chat App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: const Color(0xffee7b64),
+        // primaryColor: const Color(0xffee7b64),
+        primaryColor: Colors.purple,
       ),
       home: _isSignedIn ? const HomeView() : const LoginView(),
     );
