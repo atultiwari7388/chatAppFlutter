@@ -130,6 +130,19 @@ class _HomeViewState extends State<HomeView> {
           ],
         ),
       ),
+      body: groupList(),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Theme.of(context).primaryColor,
+        elevation: 0,
+        onPressed: () {
+          popUpDialog(context);
+        },
+        child: const Icon(Icons.add),
+      ),
     );
   }
+
+  popUpDialog(BuildContext context) {}
+
+  groupList() {}
 }
